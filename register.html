@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="custom.css">
+  </head>
+  <body class="text-light custom-bg-main">  
+    <nav class="navbar navbar-expand-lg custom-bg-navbar">
+        <div class="container">
+            <a class="navbar-brand text-light fs-2" href="#">CodeQA</a>
+
+            <form class="d-flex w-50" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Ask</button>
+            </form>
+
+            <div class="d-flex gap-2 align-items-center">
+                <div>
+                    <img src="hello.jpg" class="img-fluid rounded-circle" alt="...">
+                </div>
+                <div class="content">
+                    <div class="content__name ">Dr. Pepper</div>
+                    <div class="content__links">
+                        <a href="#">Settings</a>
+                        <a href="#">Log out</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <main class="container mt-2">
+        <div class="row">   
+            <section class="col vh-100">
+                <div class="login">
+                    <div class="d-flex align-items-center gap-2 mb-4">
+                        <h1>Registration</h1>
+                    </div>
+                    <div class="login_err">
+                        <p class="text-danger">Sorry, this email address already registred!</p>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Login</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control " id="" placeholder="dr_pepper" value="">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control " id="]" placeholder="email@example.com">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">NickName</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control " id="" placeholder="Dr.Pepper">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Repeat password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="avatarUpload" class="col-sm-2 col-form-label">Upload avatar</label>
+                        <div class="col-sm-10 d-flex align-items-center gap-2">
+                            <input type="text" class="form-control" id="avatarPath" placeholder="No file chosen" readonly>
+                            <label class="btn btn-outline-primary mb-0">
+                                Choose
+                                <input type="file" id="avatarUpload" class="d-none" accept="image/*">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-sm-10 offset-sm-2">
+                            <button type="button" class="btn text-light custom-btn-bg">Register!</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <aside class="col-3">
+                <section class="mb-3">
+                    <h3>Popular tags</h3>
+                    <div>
+                        <span class="badge rounded-pill text-bg-primary">Primary</span>
+                        <span class="badge rounded-pill text-bg-secondary">Secondary</span>
+                        <span class="badge rounded-pill text-bg-success">Success</span>
+                        <span class="badge rounded-pill text-bg-danger">Danger</span>
+                        <span class="badge rounded-pill text-bg-warning">Warning</span>
+                        <span class="badge rounded-pill text-bg-info">Info</span>
+                        <span class="badge rounded-pill text-bg-light">Light</span>
+                        <span class="badge rounded-pill text-bg-dark">Dark</span>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Best members</h3>
+                    <div>
+                        <a class="d-block" href="#">Member</a>
+                        <a class="d-block" href="#">Member</a>
+                        <a class="d-block" href="#">Member</a>
+                        <a class="d-block" href="#">Member</a>
+                        <a class="d-block" href="#">Member</a>
+                        <a class="d-block" href="#">Member</a>
+                        <a class="d-block" href="#">Member</a>
+                    </div>
+                </section>
+
+            </aside>
+        </div>
+    </main>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html> 

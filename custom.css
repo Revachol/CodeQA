@@ -14,3 +14,20 @@ a {
 .custom-bg-card {
     background-color: #171717;
 }
+
+.card{
+    margin-top: 10px;
+}
+
+.form-check{
+    padding-left: 2em;
+}
+
+.form-check-input:checked {
+    background-color: green;
+    border-color: green;
+}
+
+.custom-btn-bg{
+    background-color: #89e193;
+}
