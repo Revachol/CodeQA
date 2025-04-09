@@ -1,0 +1,27 @@
+{% load static %}
+<div class="card custom-bg-card text-light border border-light">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-2">
+        <div style="height: 100px;" class="border mb-2 w-100">
+          <img src="{% static '/img/answer.jpeg' %}" alt="img" class="img-fluid h-100" />
+        </div>
+        <div>
+          <input type="number" class="form-control custom-bg-card text-light w-50" value="5" />
+        </div>
+      </div>
+      <div class="col d-flex flex-column justify-content-between">
+        <div>
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="row">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+            <label class="form-check-label" for="flexCheckChecked">Correct!</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

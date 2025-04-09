@@ -1,0 +1,28 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+  <section class="col vh-100">
+    <div class="d-flex align-items-center gap-2 mb-4">
+      <h1>{{ question.title }}</h1>
+    </div>
+
+    <articles class="d-flex gap-3 flex-column">
+      {% include 'layouts/question.html' %}
+
+      <div class="answers border-top" style="margin-top: 20px;">
+        {% for answer in answers %}
+          {% include 'layouts/answer.html' %}
+        {% endfor %}
+      </div>
+      {% include 'layouts/pagination.html' %}
+      <div class="your_answer border-top mt-2">
+        <div class="form-floating mt-2">
+          <textarea class="form-control bg-dark text-light" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 150px"></textarea>
+          <label for="floatingTextarea2">Enter your answer here...</label>
+        </div>
+        <button type="button" class="btn text-light border-light mt-2 mb-3">Answer</button>
+      </div>
+    </articles>
+  </section>
+{% endblock %}

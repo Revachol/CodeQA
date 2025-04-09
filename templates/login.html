@@ -1,0 +1,37 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+  <section class="col vh-100">
+    <div class="login">
+      <div class="d-flex align-items-center gap-2 mb-4">
+        <h1>Log In</h1>
+      </div>
+      <div class="login_err">
+        <p class="text-danger">Sorry, wrong password!</p>
+      </div>
+      <div class="mb-3 row">
+        <label for="staticEmail" class="col-sm-2 col-form-label">Login</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="" placeholder="Enter your login here" />
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword" />
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <div class="col-sm-10 offset-sm-2">
+          <button type="button" class="btn text-light custom-btn-bg">Log In</button>
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <div class="col-sm-10 offset-sm-2">
+          <a href="{% url 'register' %}">Create new account</a>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

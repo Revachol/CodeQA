@@ -1,0 +1,27 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+  <section class="col vh-100">
+    <div class="ask">
+      <div class="d-flex align-items-center gap-2 mb-4">
+        <h1>New Questions</h1>
+      </div>
+      <div class="title d-flex justify-content-center align-items-center gap-5 mb-3">
+        <label for="" class="fs-3 col-1">Title</label>
+        <textarea name="" id="" placeholder="Enter title of question" class="form-control w-75" style="height: 30px;"></textarea>
+      </div>
+      <div class="text d-flex justify-content-center gap-5 mb-3">
+        <label for="" class="fs-3 col-1">Text</label>
+        <textarea name="" id="" placeholder="Type your question" class="form-control w-75" style="height: 150px;"></textarea>
+      </div>
+      <div class="title d-flex justify-content-center align-items-center gap-5 mb-3">
+        <label for="" class="fs-3 col-1">Tags</label>
+        <textarea name="" id="" placeholder="c++, python" class="form-control w-75" style="height: 30px;"></textarea>
+      </div>
+      <div class="w-100">
+        <button class="btn btn-outline-success" style="margin-left: 60px;" type="submit">Ask</button>
+      </div>
+    </div>
+  </section>
+{% endblock %}
