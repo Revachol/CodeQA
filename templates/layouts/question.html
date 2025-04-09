@@ -21,7 +21,7 @@
           </div>
           <div class="col">
             <span>Tags:</span>
-            {% for tag in question.tags %}
+            {% for tag in question.tags.all %}
               <span class="badge rounded-pill text-bg-success"><a href="{% url 'tag' tag %}" class="text-white text-decoration-none">{{ tag }}</a></span>
             {% endfor %}
           </div>

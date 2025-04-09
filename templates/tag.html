@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block content %}
+<section class="col vh-100">
   <h1>Questions tagged {{ tag }}</h1>
 
   <articles class="d-flex gap-3 flex-column">
@@ -11,4 +12,5 @@
 
     {% include 'layouts/pagination.html' %}
   </articles>
+</section>
 {% endblock %}
